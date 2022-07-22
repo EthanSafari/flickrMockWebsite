@@ -1,43 +1,89 @@
  * {
-    margin: 0;
+     margin: 0;
  }
 
- .navbar{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: 1fr;
-    background-color: rgba(0, 0, 0, .10);
-    padding: 10px 0;
-    border-bottom: solid black 1px ;
-    box-shadow: 0 2px 5px;
-}
+ .navbar {
+     display: grid;
+     grid-template-columns: repeat(8, 1fr);
+     grid-auto-rows: 1fr;
+     background-color: rgba(0, 0, 0, .10);
+     padding: 10px;
+     border-bottom: solid black 1px;
+     box-shadow: 0 2px 5px;
+     background-color:rgba(175, 53, 53, .9);
+     border-bottom: double 10px rgba(225, 207, 207, 0.9);
+     border-top: solid 5px rgba(226, 207, 207, 0.9)
+ }
 
-.logo {
-    display: inline-flex;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    grid-row: 1;
-    grid-column: 1;
+ .logo {
+     display: inline-flex;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     grid-row: 1;
+     grid-column: 1;
+     font-size: 20px;
+     color: whitesmoke;
+     text-shadow: -2px 2px 2px rgb(31, 41, 147);
+     font-family: 'Pokemon Solid', sans-serif;
+     color:yellow;
+     -webkit-text-stroke: 1px rgb(58, 58, 212);
+     margin: -20px 0;
+ }
+
+ .searchbar {
+     grid-area: searchbar;
+     display: inline-flex;
+     grid-row: inherit;
+     grid-column-start: 3;
+     grid-column-end: 8;
+ }
+
+ .searchbutton {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .pokeball {
+     width: 15px;
+     height: 15px;
+     padding-top: 5px;
+ }
+
+
+ #login {
+     grid-area: login;
+     display: inline-flex;
+     grid-row: inherit;
+     grid-column: 9;
+ }
+
+ #signup {
+     grid-area: signup;
+     display: inline-flex;
+     grid-row: inherit;
+     
+ }
+
+ .mainpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    background-image: url(../img/joshua-dunlop-charmander-2-watermarked.jpg);
+    background-position: 50% 25%;
+    background-size: 100%;
+ }
+
+ .starter {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 3px black;
+    /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+ }
+
+ .info{
+    color: white;
     font-size: 20px;
-    padding-left: 3%;
-}
-
-.searchbar {
-    grid-area: searchbar;
-    display: inline-flex;
-    grid-row: inherit;
-    grid-column-start: 3;
-    grid-column-end: 8;
-}
-
-#login {
-    grid-area: login;
-display: inline-flex;
-grid-row: inherit;
-grid-column: 9;
-}
-
-#signup {
-    grid-area: signup;
-display: inline-flex;
-grid-row: inherit;
-}
+    text-shadow: 0 1px black;
+ }
